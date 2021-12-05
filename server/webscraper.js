@@ -139,29 +139,6 @@ async function scrapeProductPrice(url) {
     return price;
 }
 
-// var normal = new Product("https://www.amazon.ca/Amazon-Ethernet-Adapter-Fire-Devices/dp/B01LXP5TXI/ref=p13n_ds_purchase_sim_1p_dp_desktop_1/141-2361534-6361661?pd_rd_w=NHonj&pf_rd_p=b320fab9-b132-4bb6-a1bd-e1a1eb3bd47e&pf_rd_r=8T9AWGCAZXHAWYJJQFWV&pd_rd_r=4be29f59-7e1e-4ed7-9deb-eb4b0dcc1b84&pd_rd_wg=EWiKv&pd_rd_i=B01LXP5TXI&psc=1",
-//                         "19.99",
-//                         0,
-//                         0,
-//                         0);
-// var sold_out_product = new Product("https://www.amazon.ca/Made-Canada-level-Black-Mask/dp/B0924YB4L5/ref=sr_1_131?keywords=face+mask&qid=1638659654&refinements=p_n_availability%3A12035748011&rnid=12035746011&sr=8-131",
-//                                     "0",
-//                                     1,
-//                                     0,
-//                                     0);
-// var not_sold_out_anymore = new Product("https://www.amazon.ca/Amazon-Ethernet-Adapter-Fire-Devices/dp/B01LXP5TXI/ref=p13n_ds_purchase_sim_1p_dp_desktop_1/141-2361534-6361661?pd_rd_w=NHonj&pf_rd_p=b320fab9-b132-4bb6-a1bd-e1a1eb3bd47e&pf_rd_r=8T9AWGCAZXHAWYJJQFWV&pd_rd_r=4be29f59-7e1e-4ed7-9deb-eb4b0dcc1b84&pd_rd_wg=EWiKv&pd_rd_i=B01LXP5TXI&psc=1",
-//                                         "0",
-//                                         1,
-//                                         0,
-//                                         0);
-// var notify_sale = new Product("https://www.amazon.ca/fire-tv-stick-with-3rd-gen-alexa-voice-remote/dp/B08C1TR9X6?ref_=Oct_d_obs_d_667823011&pd_rd_w=qrVzL&pf_rd_p=886d55ac-d17c-4912-a5af-948a0d840eec&pf_rd_r=AZJFJEQENB51SZDE6BDX&pd_rd_r=0dec4ba1-a834-40ec-a247-deca17d97058&pd_rd_wg=a4hGC&pd_rd_i=B08C1TR9X6",
-//                               "59.99",
-//                               0,
-//                               0,
-//                               0);
-
-// var list_of_products = [normal, sold_out_product, not_sold_out_anymore, notify_sale, list_of_products];
-
 // list of products to be added by tim using the website
 list_of_products = []
 
