@@ -1,7 +1,5 @@
-
-
 import React, { Component } from 'react'
-import { Container, Navbar, NavDropdown, Form, FormControl, Button, Nav } from 'react-bootstrap'
+import { Container, Navbar, Form, FormControl, Button, Nav } from 'react-bootstrap'
 import {
     BrowserRouter as Router,
     Routes,
@@ -10,14 +8,14 @@ import {
 } from "react-router-dom";
 
 import Home from './Home';
-import Contact from './Account';
-import About from './List'
+import Account from './Account';
+import List from './List'
 
 export default class NavbarComp extends Component {
     render() {
         return (
 
-            <Router>
+        <Router>
         <div>
         <Navbar bg="light" expand="lg">
         <Container fluid>
@@ -29,7 +27,7 @@ export default class NavbarComp extends Component {
                 style={{ maxHeight: '100px' }}
                 navbarScroll
             >
-                <Nav.Link as={Link} to={"/home"}>Home</Nav.Link>
+                <Nav.Link as={Link} to={""}>Home</Nav.Link>
                 <Nav.Link as={Link} to={"/account"}>Account</Nav.Link>
                 <Nav.Link as={Link} to={"/list"}>List</Nav.Link>
                 {/* <Nav.Link href="#" disabled>
@@ -50,17 +48,13 @@ export default class NavbarComp extends Component {
         </Navbar>
         </ div>
         <div>
-            <Route path="/home">
-                <Home />
-            </Route>
-            <Route path="/list">
-                <List />
-            </Route>
-            <Route path="/account">
-                <Account />
-            </Route>
+            <Routes>
+            <Route path="" element={<Home/>}></Route>
+            <Route path="/list" element={<List/>}></Route>
+            <Route path="/account" element={<Account/>}></Route>
+            </ Routes>
         </div>
-            </Router>
+        </Router>
         
         )
     }
