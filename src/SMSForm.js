@@ -59,25 +59,7 @@ class SMSForm extends Component {
             onSubmit={this.onSubmit}
             className={this.state.error ? 'error sms-form' : 'sms-form'}
           >
-            <div>
-              <label htmlFor="to">To:</label>
-              <input
-                type="tel"
-                name="to"
-                id="to"
-                value={this.state.message.to}
-                onChange={this.onHandleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="body">Body:</label>
-              <textarea
-                name="body"
-                id="body"
-                value={this.state.message.body}
-                onChange={this.onHandleChange}
-              />
-            </div>
+                     
             <button type="submit" disabled={this.state.submitting}>
               Send message
             </button>
